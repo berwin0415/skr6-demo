@@ -1,0 +1,38 @@
+{
+  "name": "skr6-demo",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=14.18.0 || >= 16.10.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "skr dev --host=127.0.0.1",
+    "build": "skr build --clean",
+    "analyze": "npm run build -- --analyze --build-target=stable",
+    "lint": "skr lint",
+    "lint-staged": "skr lint --staged --fix --auto-stage",
+    "test": "skr test --target=react"
+  },
+  "dependencies": {
+    "core-js": "^3.32.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@reskript/cli": "6.0.1",
+    "@reskript/cli-build": "6.0.1",
+    "@reskript/cli-dev": "6.0.1",
+    "@reskript/cli-lint": "6.0.1",
+    "@reskript/config-lint": "6.0.1",
+    "@reskript/settings": "6.0.1",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.47.0",
+    "husky": "^8.0.3",
+    "stylelint": "^15.10.2",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2"
+  }
+}
